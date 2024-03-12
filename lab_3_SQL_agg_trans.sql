@@ -31,7 +31,7 @@ LIMIT 20;
 SELECT *,
 MONTHNAME(rental_date) as month,
 DAYNAME(rental_date) as day,
-IF (DAYNAME(rental_date)="Sunday" or "Monday", "weekend", "weekday") as day_type
+IF (DAYNAME(rental_date)="Sunday" or "Saturday", "weekend", "weekday") as day_type
 from rental;
 
 #You need to ensure that customers can easily access information about the movie collection. 
